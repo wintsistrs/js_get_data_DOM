@@ -1,0 +1,2 @@
+var t=document.querySelectorAll(".population"),e=document.querySelector(".total-population"),o=document.querySelector(".average-population"),n=Array.from(t).map(function(t){return Number(t.textContent.replace(/,/g,""))}),a=n.reduce(function(t,e){return t+e},0),r=n.length>0?a/n.length:0;e&&(e.outerHTML='<span class="total-population">'.concat(a.toLocaleString(),"</span>")),o&&(o.outerHTML='<span class="average-population">'.concat(r.toLocaleString(),"</span>"));
+//# sourceMappingURL=index.f861b312.js.map
